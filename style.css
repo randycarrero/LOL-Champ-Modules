@@ -26,6 +26,17 @@
 
 /* End of Navigation Code */
 
+/*footer code*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: lightblue;
+  color: white;
+  display: block;
+}
+p {
+  color: black;
+}
 /* The Modal (Code) */
 #myBtn {
 background: whitesmoke;
