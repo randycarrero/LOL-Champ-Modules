@@ -9,7 +9,9 @@
         <meta charset="utf-8">
         <script src="java.js"></script>
         <script src="modal-text.js"></script>
-	    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="/highlights/styles/agate.min.css">
+        <script src="/highlights/highlight.min.js"></script>
     </head>
     <body>
         <div class="header">
@@ -42,9 +44,16 @@
         </div>     
 
         <div class="led-section-container">
-            <p>LED Strip</p>
+            <p>Syntax highlighting</p>
             <div class="led-container" id="strip-container"></div>
         </div>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <pre><code class="csharp">
+            using Games.LeagueOfLegends.ChampionModules.Common;
+            using Games.LeagueOfLegends.Model;
+            using LedDashboardCore;
+            using System.Threading.Tasks;
+        </code></pre>
 
         <br><br><hr><br>
 
