@@ -41,23 +41,27 @@
 </div>
 <p></p>
    <div class="">
-           <div class="tooltip"><p style="margin-top: 0px; margin-bottom: 0px;">Champion Module Name</p> <span class="tooltiptext">Make sure you fill the name including "Module" at the end for the file to save correctly. </span></div>
+           <div class="tooltip"><p style="margin-top: 0px; margin-bottom: 0px;">File name: </p> <span class="tooltiptext">Make sure you fill the name including "Module" at the end for the file to save correctly. </span></div>
             <input id="project-name" value="JaxModule">
-        </div>     
+        </div>
+        <p><h3>Champion Name</h3></p>
+        <form action="">
+            <select src="Champion.html" name="Champion" onchange="showChampion(this.value)">
+                <option value="">Select a Champion</option>
+            </select>
+         </form>
 
         <div class="Syntax">
             <p>Syntax highlighting</p>
             <div class="syntax-highlight" id="strip-container"></div>
         </div>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <pre data-src="Template\TemplateModule.cs"><code class="language-csharp">
+        <pre data-src="Template\TemplateModule.cs" data-label="download" data-download-link data-download-link-label="Download this file"><code class="language-csharp" data-download-link>
         </code></pre>
 
         <br><br><hr><br>
 
-        <button id="export-file">Export to file</button>
-        <button id="export" title="Ctrl + Enter">EXPORT</button>
-		<button id="copy-to-clipboard">Copy To Clipboard</button>
+        <button id="export-file">button</button>
+        <button id="export" title="Ctrl + Enter">button2</button>
 <p> 
 </p>
 
