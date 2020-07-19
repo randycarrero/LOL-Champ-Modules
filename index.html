@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="prism\styles\prism.css">
         <script src="prism\prism.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.full.min.js"></script>
     </head>
     <body>
         <div class="header">
@@ -45,11 +46,18 @@
             <input id="project-name" value="JaxModule">
         </div>
         <p><h3>Champion Name</h3></p>
-        <form action="">
-            <select src="Champion.html" name="Champion" onchange="showChampion(this.value)">
-                <option value="">Select a Champion</option>
+            <select class="js-data-example-ajax">
+                <option value="0" selected="selected">Select Champion  Name</option>
             </select>
-         </form>
+            <script>
+            $('.js-data-example-ajax').select2({
+                ajax: {
+                  url: 'Champion.json',
+                  dataType: 'json',
+                  // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
+                }
+              });
+              </script>
 
         <div class="Syntax">
             <p>Syntax highlighting</p>
