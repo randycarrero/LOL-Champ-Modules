@@ -25,6 +25,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }   
-//* end of Modal Code *//    
+//* end of Modal Code *//
+    //* Select search code *//
+
+$('.js-data-example-ajax').select2({
+  ajax: {
+    url: 'Champion.json',
+    dataType: 'json',
+    maximumInputLength: 8,
+    // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
+  }
+});
 });
 
