@@ -6,3 +6,5 @@
                 </div>
                 
                 https://select2.org/searching#minimum-search-term-length
+
+https://pastebin.com/anKSnMy9
