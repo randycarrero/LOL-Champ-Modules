@@ -1,6 +1,5 @@
 {
-    "results" : [
-    {"id":	0	,	"text": "Select a Champion", "selected": true},       
+    "results" : [     
 {"id":	1	,	"text": "Aatrox"},
 {"id":	2	,	"text": "Ahri"},
 {"id":	3	,	"text": "Akali"},
