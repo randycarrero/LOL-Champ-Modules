@@ -31,7 +31,8 @@ window.onclick = function(event) {
 $('.js-data-example-ajax').select2({
   ajax: {
     url: 'Champion.json',
-    dataType: 'json',
+    dataType: 'json', 
+    width: '100%',
     minimumResultsForSearch: -1,
     // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
   }
