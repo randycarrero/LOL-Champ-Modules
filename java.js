@@ -34,7 +34,6 @@ $('.js-data-example-ajax').select2({
     dataType: 'json', 
     width: '100%',
     placeholder:"Select your Champion",
-    minimumResultsForSearch: -1,
     // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
   }
 });
