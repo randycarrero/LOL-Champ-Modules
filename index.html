@@ -20,6 +20,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="dist\tooltipster.bundle.min.css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+        <script type="text/javascript" src="dist\tooltipster.bundle.min.js"></script>
+        <link rel="dist\sideTip\tooltipster-sideTip-punk.min.css" rel="stylesheet" />
+        
     </head>
     <body>
         <div class="header">
@@ -46,12 +51,14 @@
 </div>
 </div>
 <p></p>
-   <div class="">
-           <div class="tooltip"><p style="margin-top: 0px; margin-bottom: 0px;">File name: </p> <span class="tooltiptext">Make sure you fill the name including "Module" at the end for the file to save correctly. </span></div>
-            <input id="project-name" value="JaxModule">
-        </div>
-        <p><h3>Champion Name</h3></p>
+        <div class="File-name">
+        <span class="tooltip" title="Make sure you fill the name including 'Module' at the end for the file to save correctly.">File Name</span>
+        <input id="project-name" value="JaxModule">
+    </div>
+  
+        <p><h3>Champion Name</h3></i></p>
             <select class="js-data-example-ajax">
+                
                 <option value="0" selected="selected">Select Champion  Name</option>
             </select>
 
