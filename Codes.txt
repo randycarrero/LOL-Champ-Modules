@@ -8,3 +8,5 @@
                 https://select2.org/searching#minimum-search-term-length
 
 https://pastebin.com/anKSnMy9
+
+https://iamceege.github.io/tooltipster/
