@@ -39,3 +39,7 @@ $('.js-data-example-ajax').select2({
 });
 });
 
+$(document).ready(function() {
+  $('.tooltip').tooltipster();
+  theme: ['tooltipster-default', 'tooltipster-default-customized']
+});
