@@ -45,21 +45,24 @@
     <span class="close">&times;</span>
     <p id="demo-modal"></p>
   </div>
-
 </div> 
 </div>
 </div>
 <p></p>
-        <div class="File">
-        <span class="tooltip" title="Make sure you fill the name including 'Module' at the end for the file to save correctly.">File Name</span>
-        <input id="project-name" value="JaxModule">
+<div class="row">
+    <div class="column" id="column">
+      <h2><span class="tooltip" title="Make sure you fill the name including 'Module' at the end for the file to save correctly.">File Name</span></h2>
+      <input id="project-name" value="JaxModule">
     </div>
-  
-        <p><h3>Champion Name</h3></i></p>
-            <select class="js-data-example-ajax">
-                <option value="0" selected="selected">Select Champion  Name</option>
-            </select>
- <br><br><hr><br>
+    <div class="column" id="column">
+      <h2>Champion Name</h2>
+      <select class="js-data-example-ajax">
+        <option value="0" selected="selected">Select Champion  Name</option>
+    </select>
+    </div>
+  </div>
+ <br><hr>
+ <h2><span class="tooltip" title="Turn on if you need animations to last longer">Time Scale</span></h2>
         <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
     <label class="onoffswitch-label" for="myonoffswitch">
@@ -67,29 +70,14 @@
         <span class="onoffswitch-switch"></span>
     </label>
 </div>  
-<br><br><hr><br>
-<div class="row">
-    <div class="column" id="column" style="background-color:#aaa;">
-      <h2>Column 1</h2>
-      <p>Some text..</p>
-    </div>
-    <div class="column" id="column" style="background-color:#bbb;">
-      <h2>Column 2</h2>
-      <p>Some text..</p>
-    </div>
-  </div>
-  
- <br><br><hr><br>
-
+ <br><hr>
         <div class="Syntax">
-            <p>Syntax highlighting</p>
+            <h2><p style="text-align: center;">Syntax highlighting</p></h2>
             <div class="syntax-highlight" id="strip-container"></div>
         </div>
         <pre data-src="Template\TemplateModule.cs" data-download-link data-download-link-label="Download this file"><code class="language-csharp" data-download-link>
         </code></pre>
-
         <br><br><hr><br>
-
         <button id="export-file">button</button>
         <button id="export" title="Ctrl + Enter">button2</button>
 <p> 
