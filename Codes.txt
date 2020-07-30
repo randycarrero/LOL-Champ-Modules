@@ -13,23 +13,6 @@ https://iamceege.github.io/tooltipster/
 
 https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-
-function toggle(button)
-{
-  if(document.getElementById("1").value=="OFF"){
-   document.getElementById("1").value="ON";}
-
-  else if(document.getElementById("1").value=="ON"){
-   document.getElementById("1").value="OFF";}
-}
-
-
-
-htnl code
-<form action="">
-<input type="button" id="1" value="ON" style="color:blue"
-       onclick="toggle(this);">
-</form>
-
+https://codepen.io/halvves/pen/QWbWGGb
 
 https://www.javascripttutorial.net/
