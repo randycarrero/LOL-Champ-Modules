@@ -30,3 +30,6 @@ htnl code
 <input type="button" id="1" value="ON" style="color:blue"
        onclick="toggle(this);">
 </form>
+
+
+https://www.javascripttutorial.net/
