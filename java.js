@@ -43,3 +43,11 @@ $(document).ready(function() {
   $('.tooltip').tooltipster();
   theme: ['tooltipster-default', 'tooltipster-default-customized']
 });
+
+$(document).ready(function() {
+  $('.Ability-Cast').select2({
+  width: '35%',
+  placeholder: 'Select an option',
+  theme: "classic"
+  });
+});
