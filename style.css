@@ -102,18 +102,15 @@ border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
 }
-/* ! modal Link color */
 a {
     color: black
 }
-/* Add Animation */
 @keyframes animatetop {
   from {top: -300px; opacity: 0}
   to {top: 0; opacity: 1}
 }
 
 /* ! New header code */
-/* Style the header with a grey background and some padding */
 .header {
 overflow: hidden;
 background-color: #f1f1f1;
@@ -121,7 +118,6 @@ padding: 20px 10px;
 border-bottom: groove;
 }
 
-/* Style the header links */
 .header a {
 float: left;
 color: black;
@@ -135,25 +131,19 @@ border-radius: 4px;
 .header a.logo1 {
 padding: 0px;
 }
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
 font-size: 25px;
 font-weight: bold;
 }
-
-/* Change the background color on mouse-over */
 .header a:hover {
 background-color: #ddd;
 color: black;
 }
-
-/* Style the active/current link*/
 .header a.active {
 background-color: dodgerblue;
 color: white;
 }
 
-/* Float the link section to the right */
 .header-right {
 float: right;
 }
@@ -180,25 +170,6 @@ background: linear-gradient(0deg, rgba(161,161,161,1) 0%, rgba(241,241,241,1) 82
   display: inline-block;
   border-bottom: 1px dotted black;
 }
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 input.select2-search__field {
   display: none;
 }
