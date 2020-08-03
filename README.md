@@ -1,3 +1,5 @@
+# !note that this is still in sample view. nothing will change from the enviorment. this will have more features but for right now its still under development and will not be live for some time. 
+
 # LOL-Champ-Modules
 Easy web interface to create Champion Modules for the lol LED program 
 
