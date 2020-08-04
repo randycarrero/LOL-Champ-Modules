@@ -104,11 +104,14 @@
  <h2><span class="tooltip" title="Turn on if you need animations to last longer">Time Scale</span></h2>
         <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
-    <label class="onoffswitch-label" for="myonoffswitch">
+    <label class="onoffswitch-label" for="myonoffswitch" onclick="toggle_visibility('foo');">
         <span class="onoffswitch-inner"></span>
         <span class="onoffswitch-switch"></span>
     </label>
-</div>  
+</div> 
+<div id="foo" style="display:none">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
  <br><hr>
         <div class="Syntax">
             <h2><p style="text-align: center;">Syntax highlighting</p></h2>
