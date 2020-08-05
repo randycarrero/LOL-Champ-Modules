@@ -1,14 +1,9 @@
 https://fount.artequalswork.com/
                 
-
 https://iamceege.github.io/tooltipster/
-
-https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-
-radio buttons:
-https://codepen.io/halvves/pen/QWbWGGb
 
 https://www.javascripttutorial.net/
 
 Slider buttons
-https://codemyui.com/0-200-range-slider-with-number-above-slider/
+https://codepen.io/thebabydino/pen/jEQYNG?editors=1000
+http://danielstern.ca/range.css/?ref=css-tricks#/
