@@ -7,3 +7,6 @@ https://www.javascripttutorial.net/
 Slider buttons
 https://codepen.io/thebabydino/pen/jEQYNG?editors=1000
 http://danielstern.ca/range.css/?ref=css-tricks#/
+
+
+https://www.w3schools.com/howto/howto_js_rangeslider.asp
