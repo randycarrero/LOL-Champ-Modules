@@ -1,0 +1,178 @@
+
+
+$input-pad: .25em;
+$input-h: 1.5em;
+
+$border-w: 1px;
+$border-c: #818181;
+
+$track-h: .875em;
+$track-fill: linear-gradient(#fafafa, #bbb); 
+$track-bg: linear-gradient(#b0b0b0, #d5d5d5);
+
+$thumb-w: 1.5em;
+$thumb-h: 1em 1.25em;
+$thumb-base-bg: linear-gradient(#e0e0e0, #cecece);
+
+@mixin track() {
+  box-sizing: border-box;
+  
+  /* 
+   * set a border, 
+   * solid 1px black by default in IE, 
+   * no border in othr browsers
+   */
+  border: solid $border-w $border-c;
+  
+  height: $track-h;
+  border-radius: $track-h/2;
+  background: $track-bg;
+}
+
+@mixin track-diff() {
+  background: 
+    $track-fill no-repeat, 
+    $track-bg;
+  background-size: 40% 100%, 100% 100%;
+}
+
+@mixin thumb() {
+  box-sizing: border-box;
+  
+  /* 
+   * set a border, 
+   * defaults different in every browser 
+   */
+  border: solid $border-w $border-c;
+  
+  width: $thumb-w; height: nth($thumb-h, 1);
+  
+  /* 
+   * set a border-radius, 
+   * rounded by default only in Firefox 
+   */
+  border-radius: .25em;
+  
+  box-shadow: 
+    inset 0 .125em .125em #fcfcfc;
+  
+  /* 
+   * set a background, 
+   * defaults different in every browser 
+   */
+  background: $thumb-base-bg;
+  
+  /* won't work in IE, kinda messsed in Chrome */
+  cursor: ew-resize;
+}
+
+@mixin thumb-diff() {
+  $cn: #bbb;
+  $ca: rgba($cn, 0);
+  
+  height: nth($thumb-h, 2);
+  background: 
+    repeating-linear-gradient(90deg, 
+      $cn, $cn 1px, $ca 2px, $ca 4px) 
+    no-repeat 50% 50%, 
+    linear-gradient(#ededed, #c9c9c9);
+  background-size: 65% 65%, 100% 100%;
+}
+
+
+input[type='range'] {
+  &, 
+  &::-webkit-slider-runnable-track, 
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  box-sizing: border-box;
+  position: relative;
+  top: 33%; left: 50%;
+  padding: 0 $input-pad;
+  width: 16em; height: $input-h;
+  border-radius: $input-h/2;
+  transform: translate(-50%, -50%);
+  
+  /* set a background, white by default in Blink */
+  background: linear-gradient(#ccc, #fff) border-box;
+  
+  /* make font-size consistent across browsers */
+  font-size: 1em;
+  
+  cursor: pointer;
+  
+  
+  /* slider components */
+  &::-webkit-slider-runnable-track {
+    @include track();
+  }
+  &::-moz-range-track {
+    @include track();
+  }
+  &::-ms-track {
+    @include track();
+    
+    /* remove tick marks on track */
+    color: transparent;
+  }
+  
+  &::-webkit-slider-thumb {
+    /* top of the thumb = top of the track in Chrome */
+    margin-top: ($track-h - nth($thumb-h, 1))/2;
+    
+    @include thumb();
+  }
+  &::-moz-range-thumb {
+    @include thumb();    
+  }
+  &::-ms-thumb {
+    @include thumb();
+  }
+  
+  &::-ms-fill-lower, 
+  &::-ms-fill-upper, 
+  &::-ms-tooltip {
+    display: none;
+  }
+  
+  
+  /* slider variations */
+  &:nth-of-type(2) {
+    top: 66%;
+    
+    .js & {
+      &::-webkit-slider-runnable-track {
+        @include track-diff();
+      }
+      &::-moz-range-track {
+        @include track-diff();
+      }
+      &::-ms-fill-lower {
+        display: block;
+        //border: solid $border-w $border-c;
+        border-radius: $track-h;
+        background: $track-fill;
+      }
+    }
+    
+    &::-webkit-slider-thumb {
+      margin-top: ($track-h - nth($thumb-h, 2))/2;
+      @include thumb-diff();
+    }
+    &::-moz-range-thumb {
+      @include thumb-diff();
+    }
+    &::-ms-thumb {
+      @include thumb-diff();
+    }
+  }
+  
+  
+  /* slider states */
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 .125em cyan;
+  }
+}
