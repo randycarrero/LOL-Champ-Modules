@@ -10,3 +10,6 @@ http://danielstern.ca/range.css/?ref=css-tricks#/
 
 
 https://www.w3schools.com/howto/howto_js_rangeslider.asp
+
+
+https://codepen.io/thebabydino/pens/tags?selected_tag=slider&cursor=ZD0xJm89MCZwPTEy
