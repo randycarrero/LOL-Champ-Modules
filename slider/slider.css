@@ -36,8 +36,8 @@ input[type='range']::-webkit-slider-runnable-track {
   border: solid 1px #818181;
   height: 0.875em;
   border-radius: 0.4375em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b0b0b0), to(#d5d5d5));
-  background: linear-gradient(#b0b0b0, #d5d5d5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#34A7C1), to(#d5d5d5));
+  background: linear-gradient(#34A7C1, #d5d5d5);
 }
 
 input[type='range']::-moz-range-track {
@@ -50,7 +50,7 @@ input[type='range']::-moz-range-track {
   border: solid 1px #818181;
   height: 0.875em;
   border-radius: 0.4375em;
-  background: linear-gradient(#b0b0b0, #d5d5d5);
+  background: linear-gradient(#34A7C1, #d5d5d5);
 }
 
 input[type='range']::-ms-track {
@@ -63,7 +63,7 @@ input[type='range']::-ms-track {
   border: solid 1px #818181;
   height: 0.875em;
   border-radius: 0.4375em;
-  background: linear-gradient(#b0b0b0, #d5d5d5);
+  background: linear-gradient(#34A7C1, #d5d5d5);
   /* remove tick marks on track */
   color: transparent;
 }
@@ -154,13 +154,13 @@ input[type='range']:nth-of-type(2) {
 }
 
 .js input[type='range']:nth-of-type(2)::-webkit-slider-runnable-track {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#bbb)) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#b0b0b0), to(#d5d5d5));
-  background: linear-gradient(#fafafa, #bbb) no-repeat, linear-gradient(#b0b0b0, #d5d5d5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#bbb)) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#34A7C1), to(#d5d5d5));
+  background: linear-gradient(#fafafa, #bbb) no-repeat, linear-gradient(#34A7C1, #d5d5d5);
   background-size: 40% 100%, 100% 100%;
 }
 
 .js input[type='range']:nth-of-type(2)::-moz-range-track {
-  background: linear-gradient(#fafafa, #bbb) no-repeat, linear-gradient(#b0b0b0, #d5d5d5);
+  background: linear-gradient(#fafafa, #bbb) no-repeat, linear-gradient(#34A7C1, #d5d5d5);
   background-size: 40% 100%, 100% 100%;
 }
 
@@ -192,7 +192,7 @@ input[type='range']:nth-of-type(2)::-ms-thumb {
 
 input[type='range']:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 .125em cyan;
-          box-shadow: 0 0 .125em cyan;
+  -webkit-box-shadow: 0 0 .125em #272822;
+          box-shadow: 0 0 .125em #272822;
 }
 /*# sourceMappingURL=slider.css.map */
