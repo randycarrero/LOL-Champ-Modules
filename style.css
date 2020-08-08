@@ -197,6 +197,9 @@ input.select2-search__field {
 body {
   font-family: 'Times New Roman', Times, serif
 }
+name#Seconds {
+  color: #e6db74;
+}
 
 .column-2 {
   float: left;
@@ -211,4 +214,3 @@ body {
   display: table;
   clear: both;
 }
-
