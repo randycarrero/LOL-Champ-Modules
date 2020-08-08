@@ -1,198 +1,145 @@
-input[type='range'] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  top: 33%;
-  left: 50%;
-  padding: 0 0.25em;
-  width: 16em;
-  height: 1.5em;
-  border-radius: 0.75em;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  /* set a background, white by default in Blink */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#fff)) border-box;
-  background: linear-gradient(#ccc, #fff) border-box;
-  /* make font-size consistent across browsers */
-  font-size: 1em;
-  cursor: pointer;
-  /* slider components */
-  /* slider variations */
-  /* slider states */
+.slidecontainer {
+  width: 100%;
 }
 
-input[type='range'], input[type='range']::-webkit-slider-runnable-track, input[type='range']::-webkit-slider-thumb {
+.slider {
   -webkit-appearance: none;
-}
-
-input[type='range']::-webkit-slider-runnable-track {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 
-   * set a border, 
-   * solid 1px black by default in IE, 
-   * no border in othr browsers
-   */
-  border: solid 1px #818181;
-  height: 0.875em;
-  border-radius: 0.4375em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#34A7C1), to(#d5d5d5));
-  background: linear-gradient(#34A7C1, #d5d5d5);
-}
-
-input[type='range']::-moz-range-track {
-  box-sizing: border-box;
-  /* 
-   * set a border, 
-   * solid 1px black by default in IE, 
-   * no border in othr browsers
-   */
-  border: solid 1px #818181;
-  height: 0.875em;
-  border-radius: 0.4375em;
-  background: linear-gradient(#34A7C1, #d5d5d5);
-}
-
-input[type='range']::-ms-track {
-  box-sizing: border-box;
-  /* 
-   * set a border, 
-   * solid 1px black by default in IE, 
-   * no border in othr browsers
-   */
-  border: solid 1px #818181;
-  height: 0.875em;
-  border-radius: 0.4375em;
-  background: linear-gradient(#34A7C1, #d5d5d5);
-  /* remove tick marks on track */
-  color: transparent;
-}
-
-input[type='range']::-webkit-slider-thumb {
-  /* top of the thumb = top of the track in Chrome */
-  margin-top: -0.0625em;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 
-   * set a border, 
-   * defaults different in every browser 
-   */
-  border: solid 1px #818181;
-  width: 1.5em;
-  height: 1em;
-  /* 
-   * set a border-radius, 
-   * rounded by default only in Firefox 
-   */
-  border-radius: .25em;
-  -webkit-box-shadow: inset 0 .125em .125em #fcfcfc;
-          box-shadow: inset 0 .125em .125em #fcfcfc;
-  /* 
-   * set a background, 
-   * defaults different in every browser 
-   */
-  background: -webkit-gradient(linear, left top, left bottom, from(#e0e0e0), to(#cecece));
-  background: linear-gradient(#e0e0e0, #cecece);
-  /* won't work in IE, kinda messsed in Chrome */
-  cursor: ew-resize;
-}
-
-input[type='range']::-moz-range-thumb {
-  box-sizing: border-box;
-  /* 
-   * set a border, 
-   * defaults different in every browser 
-   */
-  border: solid 1px #818181;
-  width: 1.5em;
-  height: 1em;
-  /* 
-   * set a border-radius, 
-   * rounded by default only in Firefox 
-   */
-  border-radius: .25em;
-  box-shadow: inset 0 .125em .125em #fcfcfc;
-  /* 
-   * set a background, 
-   * defaults different in every browser 
-   */
-  background: linear-gradient(#e0e0e0, #cecece);
-  /* won't work in IE, kinda messsed in Chrome */
-  cursor: ew-resize;
-}
-
-input[type='range']::-ms-thumb {
-  box-sizing: border-box;
-  /* 
-   * set a border, 
-   * defaults different in every browser 
-   */
-  border: solid 1px #818181;
-  width: 1.5em;
-  height: 1em;
-  /* 
-   * set a border-radius, 
-   * rounded by default only in Firefox 
-   */
-  border-radius: .25em;
-  box-shadow: inset 0 .125em .125em #fcfcfc;
-  /* 
-   * set a background, 
-   * defaults different in every browser 
-   */
-  background: linear-gradient(#e0e0e0, #cecece);
-  /* won't work in IE, kinda messsed in Chrome */
-  cursor: ew-resize;
-}
-
-input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper, input[type='range']::-ms-tooltip {
-  display: none;
-}
-
-input[type='range']:nth-of-type(2) {
-  top: 66%;
-}
-
-.js input[type='range']:nth-of-type(2)::-webkit-slider-runnable-track {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#bbb)) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#34A7C1), to(#d5d5d5));
-  background: linear-gradient(#fafafa, #bbb) no-repeat, linear-gradient(#34A7C1, #d5d5d5);
-  background-size: 40% 100%, 100% 100%;
-}
-
-.js input[type='range']:nth-of-type(2)::-moz-range-track {
-  background: linear-gradient(#fafafa, #bbb) no-repeat, linear-gradient(#34A7C1, #d5d5d5);
-  background-size: 40% 100%, 100% 100%;
-}
-
-.js input[type='range']:nth-of-type(2)::-ms-fill-lower {
-  display: block;
-  border-radius: 0.875em;
-  background: linear-gradient(#fafafa, #bbb);
-}
-
-input[type='range']:nth-of-type(2)::-webkit-slider-thumb {
-  margin-top: -0.1875em;
-  height: 1.25em;
-  background: repeating-linear-gradient(90deg, #bbb, #bbb 1px, rgba(187, 187, 187, 0) 2px, rgba(187, 187, 187, 0) 4px) no-repeat 50% 50%, -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#c9c9c9));
-  background: repeating-linear-gradient(90deg, #bbb, #bbb 1px, rgba(187, 187, 187, 0) 2px, rgba(187, 187, 187, 0) 4px) no-repeat 50% 50%, linear-gradient(#ededed, #c9c9c9);
-  background-size: 65% 65%, 100% 100%;
-}
-
-input[type='range']:nth-of-type(2)::-moz-range-thumb {
-  height: 1.25em;
-  background: repeating-linear-gradient(90deg, #bbb, #bbb 1px, rgba(187, 187, 187, 0) 2px, rgba(187, 187, 187, 0) 4px) no-repeat 50% 50%, linear-gradient(#ededed, #c9c9c9);
-  background-size: 65% 65%, 100% 100%;
-}
-
-input[type='range']:nth-of-type(2)::-ms-thumb {
-  height: 1.25em;
-  background: repeating-linear-gradient(90deg, #bbb, #bbb 1px, rgba(187, 187, 187, 0) 2px, rgba(187, 187, 187, 0) 4px) no-repeat 50% 50%, linear-gradient(#ededed, #c9c9c9);
-  background-size: 65% 65%, 100% 100%;
-}
-
-input[type='range']:focus {
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #22c1c3;
+  background: radial-gradient(circle, #22c1c3 0%, #66d9ef 100%);
   outline: none;
-  -webkit-box-shadow: 0 0 .125em #272822;
-          box-shadow: 0 0 .125em #272822;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+span#demo {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #f8f8f2;
+  background: #272822;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+/* on/off switch style */
+.onoffswitch {
+  position: relative;
+  width: 66px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+}
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 19px;
+  padding: 0;
+  line-height: 19px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "ON";
+  padding-left: 10px;
+  background-color: #34A7C1;
+  color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 19px;
+  padding: 0;
+  line-height: 19px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  display: block;
+  width: 23px;
+  margin: 0.5px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 43px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
 }
 /*# sourceMappingURL=slider.css.map */
