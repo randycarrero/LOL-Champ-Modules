@@ -61,12 +61,10 @@ function toggle_visibility(id) {
 }
 
 window.onload = ()=>{
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-  }
+  document.getElementById("myRange").addEventListener("input", report);
+  document.getElementById("W-range").addEventListener("input", report); 
+  function report(event){
+    this.nextElementSibling.querySelector("span").textContent = this.value;  
+   }
+      }
+    
