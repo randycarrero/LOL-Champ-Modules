@@ -17,3 +17,8 @@ https://codepen.io/thebabydino/pens/tags?selected_tag=slider&cursor=ZD0xJm89MCZw
 https://codepen.io/thebabydino/pen/NPYBJQ
 
 https://codepen.io/thebabydino/pen/JoOomG
+
+
+https://www.lambdatest.com/blog/how-to-make-a-cross-browser-compatible-website/
+
+https://css-tricks.com/resolution-specific-stylesheets/
