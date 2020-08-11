@@ -143,4 +143,192 @@ p#value-box {
   -webkit-transition: all 0.3s ease-in 0s;
   transition: all 0.3s ease-in 0s;
 }
+
+* {
+  font: inherit;
+}
+
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(rgba(73, 88, 107, 0.85), rgba(9, 21, 33, 0.75)), url(https://i.stack.imgur.com/PEnJm.png), radial-gradient(rgba(73, 88, 107, 0.25), rgba(9, 21, 33, 0.25));
+  background-blend-mode: multiply;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 600 0.675em/1.75em arial, sans-serif;
+  /* level things */
+}
+
+[type='range'] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 1em;
+  width: 32em;
+  height: 5.25em;
+  background: none;
+  /* fix Chrome white */
+  cursor: pointer;
+  /* track styles */
+  /* fill styles (Edge fallback only) */
+  /* thumb styles */
+  /* what we want hidden */
+}
+
+[type='range']::-webkit-slider-runnable-track, [type='range']::-webkit-slider-thumb, [type='range'] {
+  -webkit-appearance: none;
+}
+
+[type='range']::-webkit-slider-runnable-track {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.7em 0;
+  width: 32em;
+  height: 1.75em;
+  border-radius: 0.875em;
+  -webkit-box-shadow: inset 0 -1px 1px #9daabb, inset 0 1px 0.125em #0f1110;
+          box-shadow: inset 0 -1px 1px #9daabb, inset 0 1px 0.125em #0f1110;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #4c4c4c), color-stop(0, #111), to(transparent)) 50%/ 30.6em 0.175em no-repeat, -webkit-gradient(linear, left bottom, right top, from(#474747), to(#202020));
+  background: linear-gradient(#4c4c4c 50%, #111 0, transparent) 50%/ 30.6em 0.175em no-repeat, linear-gradient(to right top, #474747, #202020);
+}
+
+.js [type='range']::-webkit-slider-runnable-track {
+  background: -webkit-gradient(linear, left top, right top, from(#ffe14c), color-stop(#ff4c8a), color-stop(0, transparent)) 50%/ 30.6em 0.175em no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(50%, #4c4c4c), color-stop(0, #111), to(transparent)) 50%/ 30.6em 0.175em no-repeat, -webkit-gradient(linear, left bottom, right top, from(#474747), to(#202020));
+  background: linear-gradient(90deg, #ffe14c, #ff4c8a calc(var(--val)*1%), transparent 0) 50%/ 30.6em 0.175em no-repeat, linear-gradient(#4c4c4c 50%, #111 0, transparent) 50%/ 30.6em 0.175em no-repeat, linear-gradient(to right top, #474747, #202020);
+}
+
+[type='range']::-moz-range-track {
+  box-sizing: border-box;
+  padding: 0.7em 0;
+  width: 32em;
+  height: 1.75em;
+  border-radius: 0.875em;
+  box-shadow: inset 0 -1px 1px #9daabb, inset 0 1px 0.125em #0f1110;
+  background: linear-gradient(#4c4c4c 50%, #111 0, transparent) 50%/ 30.6em 0.175em no-repeat, linear-gradient(to right top, #474747, #202020);
+}
+
+.js [type='range']::-moz-range-track {
+  background: linear-gradient(90deg, #ffe14c, #ff4c8a calc(var(--val)*1%), transparent 0) 50%/ 30.6em 0.175em no-repeat, linear-gradient(#4c4c4c 50%, #111 0, transparent) 50%/ 30.6em 0.175em no-repeat, linear-gradient(to right top, #474747, #202020);
+}
+
+[type='range']::-ms-track {
+  box-sizing: border-box;
+  padding: 0.7em 0;
+  width: 32em;
+  height: 1.75em;
+  border-radius: 0.875em;
+  box-shadow: inset 0 -1px 1px #9daabb, inset 0 1px 0.125em #0f1110;
+  background: linear-gradient(#4c4c4c 50%, #111 0, transparent) 50%/ 30.6em 0.175em no-repeat, linear-gradient(to right top, #474747, #202020);
+  border: none;
+  /* remove black border */
+  color: transparent;
+  /* remove ticks */
+  background: linear-gradient(#4c4c4c 50%, #111 0, transparent) 50%/ 30.6em 0.175em no-repeat;
+}
+
+.js [type='range']::-ms-track {
+  background: linear-gradient(90deg, #ffe14c, #ff4c8a calc(var(--val)*1%), transparent 0) 50%/ 30.6em 0.175em no-repeat, linear-gradient(#4c4c4c 50%, #111 0, transparent) 50%/ 30.6em 0.175em no-repeat, linear-gradient(to right top, #474747, #202020);
+}
+
+[type='range']::-ms-fill-lower {
+  height: 0.175em;
+  background: linear-gradient(90deg, transparent 0.875em, #ffe14c 0, #ff4c8a);
+}
+
+[type='range']::-webkit-slider-thumb {
+  /* to fix Chrome weird shit */
+  margin-top: -0.7875em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px rgba(238, 238, 238, 0.2);
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.2), 0 9px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.2), 0 9px 9px rgba(0, 0, 0, 0.2);
+  background: conic-gradient(#8a8a8a, #e0e0e0, #909090, #f1f2f1, #949392, #cfcfcf, #8a8a8a) border-box;
+  background-color: #949392;
+  /* fallback */
+}
+
+[type='range']::-moz-range-thumb {
+  box-sizing: border-box;
+  border: solid 1px rgba(238, 238, 238, 0.2);
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  transform: translateY(-1px);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.2), 0 9px 9px rgba(0, 0, 0, 0.2);
+  background: conic-gradient(#8a8a8a, #e0e0e0, #909090, #f1f2f1, #949392, #cfcfcf, #8a8a8a) border-box;
+  background-color: #949392;
+  /* fallback */
+  /* Firefox-only, it won't work in IE 
+       and it's messed up in Chrome */
+  cursor: ew-resize;
+}
+
+[type='range']::-ms-thumb {
+  /* -webkit-thumb styles get applied needlessly
+		 * and they break stuff that was working fine, 
+		 * so we need to fix that mess */
+  margin-top: 0;
+  box-sizing: border-box;
+  border: solid 1px rgba(238, 238, 238, 0.2);
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  transform: translateY(-1px);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.2), 0 3px 3px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2), 0 7px 7px rgba(0, 0, 0, 0.2), 0 8px 8px rgba(0, 0, 0, 0.2), 0 9px 9px rgba(0, 0, 0, 0.2);
+  background: conic-gradient(#8a8a8a, #e0e0e0, #909090, #f1f2f1, #949392, #cfcfcf, #8a8a8a) border-box;
+  background-color: #949392;
+  /* fallback */
+  background: radial-gradient(closest-side, #aaa, transparent) 50% -0.875em/ 50% 100% repeat-y, radial-gradient(closest-side, #aaa, transparent) -0.875em/ 100% 50% repeat-x #eee;
+}
+
+[type='range']::-ms-tooltip {
+  display: none;
+}
+
+html:not(.js) [type='range'] + output {
+  display: none;
+}
+
+[type='range']:focus {
+  outline: none;
+}
+
+[type='range']:focus, [type='range']:focus + output {
+  -webkit-filter: drop-shadow(0 0 0.5em rgba(0, 255, 255, 0.7));
+          filter: drop-shadow(0 0 0.5em rgba(0, 255, 255, 0.7));
+}
+
+[type='range'] + output {
+  width: 5em;
+  height: 1.75em;
+  border-radius: 0.875em;
+  -webkit-box-shadow: inset 0 -1px 1px #9daabb, inset 0 1px 0.125em #0f1110;
+          box-shadow: inset 0 -1px 1px #9daabb, inset 0 1px 0.125em #0f1110;
+  background: -webkit-gradient(linear, left bottom, right top, from(#474747), to(#202020));
+  background: linear-gradient(to right top, #474747, #202020);
+  color: #c4c4c4;
+  text-align: center;
+}
+
+[type='range'] + output:after {
+  content: '%';
+}
 /*# sourceMappingURL=slider.css.map */
