@@ -22,3 +22,5 @@ https://codepen.io/thebabydino/pen/JoOomG
 https://www.lambdatest.com/blog/how-to-make-a-cross-browser-compatible-website/
 
 https://css-tricks.com/resolution-specific-stylesheets/
+
+https://jigsaw.w3.org/css-validator/
