@@ -130,3 +130,150 @@ background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(102,217,239,1) 1
 	transition: all 0.3s ease-in 0s;
 }
 
+$base-sh: inset 0 -1px 1px #9daabb, 
+		inset 0 1px .125em #0f1110;
+$base-bg: linear-gradient(to right top, #474747, #202020);
+
+$track-pad: .7em;
+$track-w: 32em;
+$track-h: 1.75em;
+$fill-w: $track-w - 2*$track-pad;
+$fill-h: .5*($track-h - 2*$track-pad);
+$track-bg: linear-gradient(#4c4c4c 50%, #111 0, transparent) 50%/ #{$fill-w $fill-h} no-repeat;
+$fill-bg: linear-gradient(90deg, #ffe14c, #ff4c8a calc(var(--val)*1%), transparent 0) 50%/ #{$fill-w $fill-h} no-repeat;
+
+$thumb-d: $track-h;
+$thumb-sh: ();
+
+@for $i from 1 to 10 {
+	$thumb-sh: $thumb-sh, 0 $i*1px $i*1px rgba(#000, .2);
+}
+
+@mixin track() {
+	box-sizing: border-box;
+	padding: $track-pad 0;
+	width: $track-w; height: $track-h;
+	border-radius: .5*$track-h;
+	box-shadow: $base-sh;
+	background: $track-bg, $base-bg;
+	
+	.js & {
+		background: $fill-bg, $track-bg, $base-bg;
+	}
+}
+
+@mixin thumb() {
+	box-sizing: border-box;
+	border: solid 1px rgba(#eee, .2);
+	width: $thumb-d; height: $thumb-d;
+	border-radius: 50%;
+	transform: translateY(-1px);
+	box-shadow: $thumb-sh;
+	background: conic-gradient(#8a8a8a, #e0e0e0, #909090, #f1f2f1, #949392, #cfcfcf, #8a8a8a) border-box;
+	background-color: #949392; /* fallback */
+}
+
+* { font: inherit }
+
+body {
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	height: 100vh;
+	background: /* double gradient because IE */
+		radial-gradient(rgba(#49586b, .85), rgba(#091521, .75)), 
+    url(https://i.stack.imgur.com/PEnJm.png), 
+		radial-gradient(rgba(#49586b, .25), rgba(#091521, .25));
+	background-blend-mode: multiply
+}
+
+form {
+	display: flex;
+	align-items: center;
+	font: 600 .675em/#{$track-h} arial, sans-serif; /* level things */
+}
+
+[type='range'] {
+	&::-webkit-slider-runnable-track, 
+	&::-webkit-slider-thumb, & {
+		-webkit-appearance: none
+	}
+	
+	box-sizing: border-box;
+	margin-right: 1em;
+	width: $track-w; height: 3*$track-h;
+	background: none; /* fix Chrome white */
+  cursor: pointer;
+	
+	/* track styles */
+	&::-webkit-slider-runnable-track {
+		@include track()
+	}
+	
+	&::-moz-range-track { @include track() }
+	
+	&::-ms-track {
+		@include track();
+		border: none; /* remove black border */
+		color: transparent; /* remove ticks */
+		background: $track-bg /* fallback background */
+	}
+	
+	/* fill styles (Edge fallback only) */
+	&::-ms-fill-lower {
+		height: $fill-h;
+		background: 
+			linear-gradient(90deg, 
+				transparent .5*$thumb-d, #ffe14c 0, #ff4c8a)
+	}
+	
+	/* thumb styles */
+	&::-webkit-slider-thumb {
+		/* to fix Chrome weird shit */
+		margin-top: .5*($fill-h - $thumb-d);
+		@include thumb()
+	}
+	
+	&::-moz-range-thumb {
+		@include thumb();
+		/* Firefox-only, it won't work in IE 
+       and it's messed up in Chrome */
+    cursor: ew-resize
+	}
+	
+	&::-ms-thumb {
+		/* -webkit-thumb styles get applied needlessly
+		 * and they break stuff that was working fine, 
+		 * so we need to fix that mess */
+		margin-top: 0;
+		@include thumb();
+		background: 
+			radial-gradient(closest-side, #aaa, transparent) 
+				50% #{-.5*$thumb-d}/ 50% 100% repeat-y, 
+			radial-gradient(closest-side, #aaa, transparent) 
+				#{-.5*$thumb-d}/ 100% 50% repeat-x #eee;
+	}
+	
+	/* what we want hidden */	
+	&::-ms-tooltip { display: none }
+	html:not(.js) & + output { display: none }
+	
+	&:focus {
+		outline: none;
+		
+		&, + output {
+			filter: drop-shadow(0 0 .5em rgba(cyan, .7))
+		}
+	}
+	
+	& + output {
+		width: 5em; height: $track-h;
+		border-radius: .5*$track-h;
+		box-shadow: $base-sh;
+		background: $base-bg;
+		color: #c4c4c4;
+		text-align: center;
+		
+		&:after { content: '%' }
+	}
+}
