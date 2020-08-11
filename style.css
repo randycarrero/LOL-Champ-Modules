@@ -1,6 +1,5 @@
 /*  Start of navigation Code */
 .topnav {
-  background-color: none;
   overflow: hidden;
   border-radius: 2px;
 }
@@ -157,11 +156,6 @@ float: right;
 .header-right {
   float: none;
 }
-}
-html {
-  background: rgb(161,161,161);
-background: linear-gradient(0deg, rgba(161,161,161,1) 0%, rgba(241,241,241,1) 82%);
-  display: block;
 }
 /* !tooltip code */
 .tooltip {
