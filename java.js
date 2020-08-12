@@ -43,3 +43,28 @@ $(document).ready(function() {
   $('.tooltip').tooltipster();
   theme: ['tooltipster-default', 'tooltipster-default-customized']
 });
+
+$(document).ready(function() {
+  $('.Ability-Cast').select2({
+  width: '35%',
+  placeholder: 'Select an option',
+  theme: "classic"
+  });
+});
+
+function toggle_visibility(id) {
+  var e = document.getElementById(id);
+  if(e.style.display == 'none')
+     e.style.display = 'block';
+  else
+     e.style.display = 'none';
+}
+
+window.onload = ()=>{
+  document.getElementById("myRange").addEventListener("input", report);
+  document.getElementById("W-range").addEventListener("input", report); 
+  function report(event){
+    this.nextElementSibling.querySelector("span").textContent = this.value;  
+   }
+      }
+    
