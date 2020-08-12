@@ -15,14 +15,14 @@
         <script src="java.js"></script>
         <script src="modal-text.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <link rel="stylesheet" href="prism\styles\prism.css">
-        <script src="prism\prism.js"></script>
+        <link rel="stylesheet" href="prism/styles/prism.css">
+        <script src="prism/prism.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="dist\tooltipster.bundle.min.css" />
-        <script src="dist\tooltipster.bundle.min.js"></script>
-        <link href="slider\slider.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="dist/tooltipster.bundle.min.css" />
+        <script src="dist/tooltipster.bundle.min.js"></script>
+        <link href="slider/slider.css" rel="stylesheet" />
 
     </head>
     <body>
@@ -55,7 +55,7 @@
       <input id="project-name" value="JaxModule">
     </div>
     <div class="column">
-      <h2>Champion Name</h2>
+      <h2 class="tittle">Champion Name</h2>
       <select class="js-data-example-ajax">
         <option value="0" selected="selected">Select Champion  Name</option>
     </select>
@@ -64,7 +64,7 @@
  <br><hr>
   <div class="row2">
     <div class="column-2">
-      <h2>Ability cast [Q]</h2>
+      <h2 class="tittle">Ability cast [Q]</h2>
       <select class="Ability-Cast" name="Ability">
         <option></option>
         <option value="N">Normal</option>
@@ -73,7 +73,7 @@
       </select>
     </div>
     <div class="column-2">
-      <h2>Ability cast mode</h2>
+      <h2 class="tittle">Ability cast mode</h2>
       <select class="Ability-Cast" name="Ability">
         <option></option>
         <option value="N">Normal</option>
@@ -82,7 +82,7 @@
       </select>
     </div>
     <div class="column-2">
-      <h2>Ability cast [E]</h2>
+      <h2 class="tittle">Ability cast [E]</h2>
       <select class="Ability-Cast" name="Ability">
         <option></option>
         <option value="N">Normal</option>
@@ -91,7 +91,7 @@
       </select>
     </div>
     <div class="column-2">
-      <h2><span class="tooltip" title="Ability Cast for R [ultimate]">Ability Cast R</span></h2>
+      <h2 class="tittle"><span class="tooltip" title="Ability Cast for R [ultimate]">Ability Cast R</span></h2>
       <select class="Ability-Cast" name="Ability">
         <option></option>
         <option value="N">Normal</option>
@@ -101,7 +101,7 @@
     </div>
   </div>
  <br><hr>
- <h2><span class="tooltip" title="Turn on if you need animations to last longer">Time Scale</span></h2>
+ <h2 class="tittle"><span class="tooltip" title="Turn on if you need animations to last longer">Time Scale</span></h2>
         <div class="onoffswitch">
     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
     <label class="onoffswitch-label" for="myonoffswitch" onclick="toggle_visibility('foo');">
@@ -113,9 +113,9 @@
   <br><hr><br>
   <div class="slidecontainer">
     <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
-    <p id="value-box">Value: <span id="demo" style="color:#ae81ff;"></span><span class="Seconds"/> Seconds</p>
+    <p class="value-box">Value: <span id="demo" style="color:#ae81ff;"></span><span class="Seconds"> Seconds</span></p>
     <input type="range" min="1" max="200" value="1" class="slider" id="W-range">
-    <p id="value-box">Value: <span  Name="W-range" id="demo2" style="color:#ae81ff;"></span><span class="Seconds"/> Seconds</p>
+    <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span><span class="Seconds"> Seconds</span></p>
   </div>
  
 </div>
@@ -148,7 +148,7 @@ _R.addEventListener('change', update, false);
 </script>
  <br><hr>
         <div class="Syntax">
-            <h2 style="text-align: center;">Syntax highlighting</h2>
+            <h2 class="tittle" style="text-align: center;">Syntax highlighting</h2>
             <div class="syntax-highlight" id="strip-container"></div>
         </div>
         <pre data-src="Template\TemplateModule.cs" data-download-link data-download-link-label="Download this file"><code class="language-csharp" data-download-link>
@@ -161,5 +161,5 @@ _R.addEventListener('change', update, false);
 
 
     </body>
-  <p>Author: R. C. // Project since 2020</p>
+  <h4 class="footer">Author: R. C. // Project since 2020</h4>
 </html>
