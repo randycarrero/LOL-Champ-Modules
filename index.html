@@ -112,40 +112,21 @@
 <div id="foo" style="display:none">
   <br><hr><br>
   <div class="slidecontainer">
-    <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
-    <p class="value-box">Value: <span id="demo" style="color:#ae81ff;"></span><span class="Seconds"> Seconds</span></p>
+<form>
+    <input type="range" min="1" max="200" value="1" class="slider" id="myRange">
+    <p class="value-box">Value: <span id="demo" style="color:#ae81ff;"></span></p>
+   </form> <form>
     <input type="range" min="1" max="200" value="1" class="slider" id="W-range">
-    <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span><span class="Seconds"> Seconds</span></p>
+    <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
+    </form><form>
+    <input type="range" min="1" max="200" value="1" class="slider" id="E-range">
+    <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
+    </form><form>
+    <input type="range" min="1" max="200" value="1" class="slider" id="R-range">
+    <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
+  </form>
   </div>
- 
-</div>
-<br><hr>
-<form style="--val: 75">
-  <input id="r" type="range" value="75"/>
-  <output for="r">75</output>
-</form>
-<script>
-  const _R = document.getElementById('r'), 
-			_F = document.querySelector('form'), 
-			_O = document.querySelector('output[for=r]');
-
-let val = +_R.value;
-
-function update() {
-	let newval = +_R.value;
-	
-	if(newval !== val) {
-		val = newval;
-		_F.style.setProperty('--val', val);
-		_O.textContent = val;
-	}
-};
-
-document.documentElement.classList.add('js');
-
-_R.addEventListener('input', update, false);
-_R.addEventListener('change', update, false);
-</script>
+  </div>
  <br><hr>
         <div class="Syntax">
             <h2 class="tittle" style="text-align: center;">Syntax highlighting</h2>

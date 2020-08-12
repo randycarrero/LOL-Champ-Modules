@@ -62,7 +62,9 @@ function toggle_visibility(id) {
 
 window.onload = ()=>{
   document.getElementById("myRange").addEventListener("input", report);
-  document.getElementById("W-range").addEventListener("input", report); 
+  document.getElementById("W-range").addEventListener("input", report);
+  document.getElementById("E-range").addEventListener("input", report);
+  document.getElementById("R-range").addEventListener("input", report);  
   function report(event){
     this.nextElementSibling.querySelector("span").textContent = this.value;  
    }
