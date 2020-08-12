@@ -33,10 +33,13 @@ input#project-name {
   visibility: initial;
   }
 /*footer code*/
-footer {
+h4.footer {
 text-align: left;
 padding: 3px;
-color: black;
+color: #f8f8f2;
+}
+h2.tittle {
+  color: #f8f8f2;
 }
 
 /* The Modal (Code) */
