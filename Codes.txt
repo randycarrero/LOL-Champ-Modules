@@ -24,3 +24,10 @@ https://www.lambdatest.com/blog/how-to-make-a-cross-browser-compatible-website/
 https://css-tricks.com/resolution-specific-stylesheets/
 
 https://jigsaw.w3.org/css-validator/
+
+
+https://stackoverflow.com/questions/39787615/extract-particular-data-from-json-file
+
+https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/
+
+https://devqa.io/json-tutorial-how-to-use-json-in-javascript/
