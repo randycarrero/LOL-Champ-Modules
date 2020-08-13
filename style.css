@@ -202,7 +202,7 @@ body {
   clear: both;
 }
 
-input#File-name {
+input.buttons {
     display: inline-block;
     padding: 0.3em 1.2em;
     margin: 0 0.1em 0.1em 0;
@@ -224,12 +224,12 @@ input#File-name {
     border: solid;
     border-color: #999999;
 }
-input#File-name:hover {
+input.buttons:hover {
   border-color: #34A7C1;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(93, 213, 250, 0.37), 0 6px 20px 0 rgba(93, 213, 243, 0.37);
 }
 @media all and (max-width:30em){
-   input#File-name{
+   input.buttons{
   display:block;
   margin:0.2em auto;
   }
@@ -242,4 +242,13 @@ input#project-name {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   height: 30px;
+}
+
+input {
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  width: 100%;
 }
