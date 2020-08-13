@@ -51,9 +51,14 @@
 <p></p>
 <div class="row">
     <div class="column">
+      
       <h2><span class="tooltip" title="Make sure you fill the name including 'Module' at the end for the file to save correctly.">File Name</span></h2>
-      <input id="project-name" value="JaxModule">
-    </div>
+     <form autocomplete="off" action="/action_page.php"> 
+      <div class="autocomplete">
+      <input class="textbox" id="project-name" placeholder="JaxModule" type="text" name="prj-nme">
+      <input class="buttons" id="File-name" style="margin-left: 30px;" type="submit">
+    </form></div>
+  </div>
     <div class="column">
       <h2 class="tittle">Champion Name</h2>
       <select class="js-data-example-ajax">
@@ -113,16 +118,16 @@
   <br><hr><br>
   <div class="slidecontainer">
 <form>
-    <input type="range" min="1" max="200" value="1" class="slider" id="myRange">
+    <input type="range" min="0" max="200" value="1" class="slider" id="myRange">
     <p class="value-box">Value: <span id="demo" style="color:#ae81ff;"></span></p>
    </form> <form>
-    <input type="range" min="1" max="200" value="1" class="slider" id="W-range">
+    <input type="range" min="0" max="200" value="1" class="slider" id="W-range">
     <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
     </form><form>
-    <input type="range" min="1" max="200" value="1" class="slider" id="E-range">
+    <input type="range" min="0" max="200" value="1" class="slider" id="E-range">
     <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
     </form><form>
-    <input type="range" min="1" max="200" value="1" class="slider" id="R-range">
+    <input type="range" min="0" max="200" value="1" class="slider" id="R-range">
     <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
   </form>
   </div>

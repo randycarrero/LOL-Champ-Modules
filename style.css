@@ -119,15 +119,7 @@ padding: 20px 10px;
 border-bottom: groove;
 }
 
-.header a {
-float: left;
-color: black;
-text-align: center;
-padding: 12px;
-text-decoration: none;
-font-size: 18px;
-line-height: 25px;
-border-radius: 4px;
+.header a { float: left; color: black; text-align: center; padding: 12px; text-decoration: none; font-size: 18px; line-height: 25px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px;
 }
 .header a.logo1 {
 padding: 0px;
@@ -208,4 +200,46 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+input#File-name {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.1em 0.1em 0;
+    background-color: #EEEEEE;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius: 5px !important;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#8292a2;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+    border: solid;
+    border-color: #999999;
+}
+input#File-name:hover {
+  border-color: #34A7C1;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+@media all and (max-width:30em){
+   input#File-name{
+  display:block;
+  margin:0.2em auto;
+  }
+}
+
+input#project-name {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  height: 30px;
 }
