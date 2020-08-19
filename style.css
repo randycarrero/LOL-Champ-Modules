@@ -33,12 +33,12 @@ input#project-name {
   visibility: initial;
   }
 /*footer code*/
-h4.footer {
-text-align: left;
+.footer {
+  color: #34A7C1;
+  text-align: left;
 padding: 3px;
-color: #f8f8f2;
 }
-h2.tittle {
+.tittle {
   color: #f8f8f2;
 }
 
