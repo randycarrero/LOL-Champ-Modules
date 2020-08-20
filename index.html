@@ -80,7 +80,7 @@
       </select>
     </div>
     <div class="column-2">
-      <h2 class="tittle">Ability cast mode</h2>
+      <h2 class="tittle">Ability Cast [W]</h2>
       <select class="Ability-Cast" name="Ability">
         <option></option>
         <option value="N">Normal</option>
@@ -89,7 +89,7 @@
       </select>
     </div>
     <div class="column-2">
-      <h2 class="tittle">Ability cast [E]</h2>
+      <h2 class="tittle">Ability Cast [E]</h2>
       <select class="Ability-Cast" name="Ability">
         <option></option>
         <option value="N">Normal</option>
@@ -98,7 +98,7 @@
       </select>
     </div>
     <div class="column-2">
-      <h2 class="tittle"><span class="tooltip" title="Ability Cast for R [ultimate]">Ability Cast R</span></h2>
+      <h2 class="tittle"><span class="tooltip" title="Ability Cast for R [ultimate]">Ability Cast [R]</span></h2>
       <select class="Ability-Cast" name="Ability">
         <option></option>
         <option value="N">Normal</option>
@@ -120,15 +120,19 @@
   <br><hr><br>
   <div class="slidecontainer">
 <form>
+  <span class="slider-tittle">Q Timer</span>
     <input type="range" min="0" max="200" value="1" class="slider" id="myRange">
     <p class="value-box">Value: <span id="demo" style="color:#ae81ff;"></span></p>
    </form> <form>
+    <span class="slider-tittle">W Timer</span> 
     <input type="range" min="0" max="200" value="1" class="slider" id="W-range">
     <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
     </form><form>
+      <span class="slider-tittle">E Timer</span>
     <input type="range" min="0" max="200" value="1" class="slider" id="E-range">
     <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
     </form><form>
+      <span class="slider-tittle">R Timer</span>
     <input type="range" min="0" max="200" value="1" class="slider" id="R-range">
     <p class="value-box">Value: <span id="demo2" style="color:#ae81ff;"></span></p>
   </form>
@@ -136,7 +140,7 @@
   </div>
  <br><hr>
         <div class="Syntax">
-            <h2 class="tittle" style="text-align: center;">Syntax highlighting</h2>
+            <h2 class="tittle" style="text-align: center;"><span class="tooltip" title="This is a Template view only, Does not update per settings you input.">Syntax Highlighting</span></h2>
             <div class="syntax-highlight" id="strip-container"></div>
         </div>
         <pre data-src="Template\TemplateModule.cs" data-download-link data-download-link-label="Download this file"><code class="language-csharp" data-download-link>
@@ -149,6 +153,10 @@
 
 
     </body>
+    <div class="column">
   <h4 class="footer">Author: R. C. // Project since 2020</h4>
+</div>
+<div class="column">
   <h3 class="footer"><i class="fas fa-id-badge"></i> Icon's © <a class="footer" href="https://fontawesome.com/license/free">FA</a></h3> 
+  </div>
 </html>

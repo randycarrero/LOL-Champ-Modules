@@ -252,3 +252,12 @@ input {
 input[type=text] {
   width: 100%;
 }
+/* ? slider text code */
+.slider-tittle {
+  color: #66d9ef;
+  font-size: larger;
+}
+
+.value-box {
+  font-size:12px
+}
