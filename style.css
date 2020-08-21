@@ -44,10 +44,9 @@ padding: 3px;
 
 /* The Modal (Code) */
 #myBtn {
-background: whitesmoke;
+background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 cursor: pointer;
 float: right; 
-font-size: 20px;
 color: slategray;
 border: solid;
 border-width: thin;
@@ -79,7 +78,9 @@ border-radius: 5px;
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -91,7 +92,6 @@ border-radius: 5px;
 }
 
 .close {
-  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -114,22 +114,28 @@ a {
 /* ! New header code */
 .header {
 overflow: hidden;
-background-color: #f1f1f1;
-padding: 20px 10px;
-border-bottom: groove;
+padding: 10px 10px;
+padding-bottom: 5px;
+border-radius:10px;
+background-color: #8BC6EC;
+background-image: linear-gradient(177deg, #cbd1bb 0%, #a6a6a6 82%);
+
+
 }
 
 .header a { float: left; color: black; text-align: center; padding: 12px; text-decoration: none; font-size: 18px; line-height: 25px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px;
 }
-.header a.logo1 {
-padding: 0px;
+.header .img-logo {
+float: left;
 }
 .header a.logo {
 font-size: 25px;
 font-weight: bold;
 }
 .header a:hover {
-background-color: #ddd;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+     
 color: black;
 }
 .header a.active {
