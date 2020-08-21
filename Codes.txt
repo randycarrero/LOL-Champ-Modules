@@ -32,4 +32,9 @@ https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/
 
 https://devqa.io/json-tutorial-how-to-use-json-in-javascript/
 
-https://www.creative-tim.com/product/paper-kit-2
+hr {
+  border: 0;
+height: 20%;
+background-image: url(res/Seperator/clash-1.svg);
+background-repeat: no-repeat;
+}
