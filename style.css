@@ -43,23 +43,6 @@ padding: 3px;
 }
 
 /* The Modal (Code) */
-#myBtn {
-background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-cursor: pointer;
-float: right; 
-color: slategray;
-border: solid;
-border-width: thin;
-padding-top: 14px;
-padding-bottom: 15px;
-padding-left: 16px;
-padding-right: 16px;
-border-radius: 5px;
-}
-
-#myBtn:hover {
-  background-color: #ddd;
-}
 .modal {
   display: none;
   position: fixed;
@@ -71,10 +54,7 @@ border-radius: 5px;
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
-}
-.modal a:hover {
- background-color: slategray; 
-}  
+} 
 
 /* Modal Content/Box */
 .modal-content {
@@ -102,9 +82,6 @@ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-a {
-    color: black
 }
 @keyframes animatetop {
   from {top: -300px; opacity: 0}
