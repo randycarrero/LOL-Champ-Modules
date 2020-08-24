@@ -185,7 +185,7 @@ body {
   clear: both;
 }
 
-input.buttons {
+.buttons {
     display: inline-block;
     padding: 0.3em 1.2em;
     margin: 0 0.1em 0.1em 0;
@@ -207,7 +207,7 @@ input.buttons {
     border: solid;
     border-color: #999999;
 }
-input.buttons:hover {
+.buttons:hover {
   border-color: #34A7C1;
   box-shadow: 0 8px 16px 0 rgba(93, 213, 250, 0.37), 0 6px 20px 0 rgba(93, 213, 243, 0.37);
 }
@@ -230,7 +230,7 @@ input#project-name {
 input {
   border: 1px solid transparent;
   padding: 10px;
-  font-size: 16px;
+  font-size: 12px;
 }
 input[type=text] {
   width: 100%;
@@ -239,6 +239,7 @@ input[type=text] {
 .slider-tittle {
   color: #66d9ef;
   font-size: larger;
+  margin-right: 10px;
 }
 
 .value-box {
