@@ -245,3 +245,10 @@ input[type=text] {
 .value-box {
   font-size:12px
 }
+
+hr {
+border: 0;
+height: 6%;
+background-image: url(res/separator/2.1.png);
+background-repeat: space;
+}
