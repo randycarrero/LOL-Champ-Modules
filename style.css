@@ -252,3 +252,9 @@ height: 6%;
 background-image: url(res/separator/2.1.png);
 background-repeat: space;
 }
+hr.separator {
+  border: 0;
+height: 6%;
+background-image: url(res/separator/1.5.png);
+background-repeat: space;
+}
