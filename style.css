@@ -246,15 +246,31 @@ input[type=text] {
   font-size:12px
 }
 
-hr {
-border: 0;
-height: 6%;
-background-image: url(res/separator/2.1.png);
-background-repeat: space;
-}
-hr.separator {
+/* Image in center of <hr> tag */
+
+div.separator-style {
+  height: 10%;
+  background: url(res/separator/1.5.png) no-repeat scroll center;
+  }
+
+div.separator-style2 {
+    height: 10%;
+    background: url(res/separator/2.1.png) no-repeat scroll center;
+    }
+hr.separator-left
+  {
+  width: 40%;
+  margin-top: -30px;
+  margin-left: 0px;
   border: 0;
-height: 6%;
-background-image: url(res/separator/1.5.png);
-background-repeat: space;
-}
+  border-bottom: 2px dashed black;
+  }
+
+  hr.separator-right
+  {
+  width: 40%;
+  margin-top: -10px;
+  margin-Right: 0px;
+  border: 0;
+  border-bottom: 2px dashed black;
+  }
