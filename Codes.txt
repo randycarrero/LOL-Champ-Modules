@@ -4,37 +4,5 @@ https://iamceege.github.io/tooltipster/
 
 https://www.javascripttutorial.net/
 
-Slider buttons
-https://codepen.io/thebabydino/pen/jEQYNG?editors=1000
-http://danielstern.ca/range.css/?ref=css-tricks#/
-
-
-https://www.w3schools.com/howto/howto_js_rangeslider.asp
-
-
-https://codepen.io/thebabydino/pens/tags?selected_tag=slider&cursor=ZD0xJm89MCZwPTEy
-
-https://codepen.io/thebabydino/pen/NPYBJQ
-
-https://codepen.io/thebabydino/pen/JoOomG
-
-
-https://www.lambdatest.com/blog/how-to-make-a-cross-browser-compatible-website/
-
-https://css-tricks.com/resolution-specific-stylesheets/
-
 https://jigsaw.w3.org/css-validator/
-
-
-https://stackoverflow.com/questions/39787615/extract-particular-data-from-json-file
-
-https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/
-
-https://devqa.io/json-tutorial-how-to-use-json-in-javascript/
-
-hr {
-  border: 0;
-height: 20%;
-background-image: url(res/Seperator/clash-1.svg);
-background-repeat: no-repeat;
-}
+https://www.w3schools.com/jsref/event_oninput.asp
