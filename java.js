@@ -55,7 +55,7 @@ window.onload = ()=>{
       });
 
  $(function() {
-        $('select2').selectric();
+        $('select').selectric();
       $.get('Champs.html', function(data) {
         $('#ajax').append(data).selectric();
       });
