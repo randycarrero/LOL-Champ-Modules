@@ -26,32 +26,12 @@ window.onclick = function(event) {
   }
 }   
 //* end of Modal Code *//
-    //* Select search code *//
-
-$('.js-data-example-ajax').select2({
-  ajax: {
-    url: 'Champion.json',
-    dataType: 'json', 
-    width: '100%',
-    placeholder:"Select your Champion",
-    // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
-  }
-});
 });
 
 $(document).ready(function() {
   $('.tooltip').tooltipster();
   theme: ['tooltipster-default', 'tooltipster-default-customized']
 });
-
-$(document).ready(function() {
-  $('.Ability-Cast').select2({
-  width: '35%',
-  placeholder: 'Select an option',
-  theme: "classic"
-  });
-});
-
 function toggle_visibility(id) {
   var e = document.getElementById(id);
   if(e.style.display == 'none')
@@ -69,4 +49,14 @@ window.onload = ()=>{
     this.nextElementSibling.querySelector("span").textContent = this.value;  
    }
       }
-    
+
+      $(function() {
+        $('select').selectric();
+      });
+
+ $(function() {
+        $('select2').selectric();
+      $.get('Champs.html', function(data) {
+        $('#ajax').append(data).selectric();
+      });
+    });

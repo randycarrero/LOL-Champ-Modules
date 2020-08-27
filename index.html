@@ -6,20 +6,16 @@
         <link rel="icon" type="image/png" sizes="32x32" href="res/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="res/favicon/favicon-16x16.png">
         <link rel="manifest" href="res/favicon/site.webmanifest">
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.js"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8">
         <script src="java.js"></script>
         <script src="modal-text.js"></script>
-
+        <script src="selectric/jquery.selectric.min.js"></script>
+        <link rel="stylesheet" href="selectric/selectric.css">
         <link rel="stylesheet" href="prism/styles/prism.css">
         <script src="prism/prism.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
         <link rel="stylesheet" type="text/css" href="dist/tooltipster.bundle.min.css" />
         <script src="dist/tooltipster.bundle.min.js"></script>
         <link href="slider/slider.css" rel="stylesheet" />
@@ -60,9 +56,7 @@
   </div>
     <div class="column">
       <h2 class="tittle">Champion Name</h2>
-      <select class="js-data-example-ajax">
-        <option value="0" selected="selected">Select Champion  Name</option>
-    </select>
+      <select id="ajax"></select>
     </div>
   </div>
   <br>
@@ -73,7 +67,7 @@
     <div class="column-2">
       <h2 class="tittle">Ability cast [Q]</h2>
       <select class="Ability-Cast" name="Ability">
-        <option></option>
+        <option>Select an Option</option>
         <option value="N">Normal</option>
         <option value="I">Instant</option>
         <option value="PC">Point & click</option>
@@ -82,7 +76,7 @@
     <div class="column-2">
       <h2 class="tittle">Ability Cast [W]</h2>
       <select class="Ability-Cast" name="Ability">
-        <option></option>
+        <option>Select an Option</option>
         <option value="N">Normal</option>
         <option value="I">Instant</option>
         <option value="PC">Point & click</option>
@@ -91,7 +85,7 @@
     <div class="column-2">
       <h2 class="tittle">Ability Cast [E]</h2>
       <select class="Ability-Cast" name="Ability">
-        <option></option>
+        <option>Select an Option</option>
         <option value="N">Normal</option>
         <option value="I">Instant</option>
         <option value="PC">Point & click</option>
@@ -100,7 +94,7 @@
     <div class="column-2">
       <h2 class="tittle"><span class="tooltip" title="Ability Cast for R [ultimate]">Ability Cast [R]</span></h2>
       <select class="Ability-Cast" name="Ability">
-        <option></option>
+        <option>Select an Option</option>
         <option value="N">Normal</option>
         <option value="I">Instant</option>
         <option value="PC">Point & click</option>
