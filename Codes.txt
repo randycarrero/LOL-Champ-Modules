@@ -6,3 +6,7 @@ https://www.javascripttutorial.net/
 
 https://jigsaw.w3.org/css-validator/
 https://www.w3schools.com/jsref/event_oninput.asp
+
+https://html.com/input-type-file/
+
+https://www.encodedna.com/javascript/how-to-save-form-data-in-a-text-file-using-javascript.htm
