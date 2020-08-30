@@ -26,8 +26,10 @@ window.onclick = function(event) {
   }
 }   
 //* end of Modal Code *//
+
 });
 
+//* tool tip code //
 $(document).ready(function() {
   $('.tooltip').tooltipster();
   theme: ['tooltipster-default', 'tooltipster-default-customized']
@@ -48,7 +50,7 @@ window.onload = ()=>{
   function report(event){
     this.nextElementSibling.querySelector("span").textContent = this.value;  
    }
-      }
+      };
 
       $(function() {
         $('select').selectric();
@@ -60,3 +62,44 @@ window.onload = ()=>{
         $('#ajax').append(data).selectric();
       });
     });
+
+//? file creation code //
+let saveFile = () => {
+    	
+  // Get the data from each element on the form.
+const name = document.getElementById('module-name');
+  const age = document.getElementById('ajax');
+  const AbilityQ = document.getElementById('Q');
+  const AbilityW = document.getElementById('W');
+  const AbilityE = document.getElementById('E');
+  const AbilityR = document.getElementById('R');
+  const msg = document.getElementById('msg');
+  
+  // This variable stores all the data.
+  let data = 
+      '\r FileName: ' + name.value + ' \r\n ' + 
+      'Age: ' +age.value + ' \r\n ' + 
+      'Ability-Q: ' + AbilityQ.value + ' \r\n ' + 
+      'Ability-W: ' + AbilityW.value + ' \r\n ' +
+      'Ability-E: ' + AbilityE.value + ' \r\n ' +
+      'Ability-R: ' + AbilityR.value + ' \r\n ' +
+      'Message: ' + msg.value;
+  
+  // Convert the text to BLOB.
+  const textToBLOB = new Blob([data], { type: 'text/plain' });
+  const sFileName = 'formData.txt';	   // The file to save the data.
+
+  let newLink = document.createElement("a");
+  newLink.download = sFileName;
+
+  if (window.webkitURL != null) {
+      newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+  }
+  else {
+      newLink.href = window.URL.createObjectURL(textToBLOB);
+      newLink.style.display = "none";
+      document.body.appendChild(newLink);
+  }
+
+  newLink.click(); 
+}
