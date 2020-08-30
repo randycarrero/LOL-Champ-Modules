@@ -68,7 +68,8 @@ let saveFile = () => {
     	
   // Get the data from each element on the form.
 const name = document.getElementById('module-name');
-  const age = document.getElementById('ajax');
+const modulename = document.getElementById('module-name');
+  const Champ = document.getElementById('ajax');
   const AbilityQ = document.getElementById('Q');
   const AbilityW = document.getElementById('W');
   const AbilityE = document.getElementById('E');
@@ -78,7 +79,8 @@ const name = document.getElementById('module-name');
   // This variable stores all the data.
   let data = 
       '\r FileName: ' + name.value + ' \r\n ' + 
-      'Age: ' +age.value + ' \r\n ' + 
+      'module name: ' +modulename.value + 'Module' + ' \r\n ' +
+      'Champion: ' +Champ.value + ' \r\n ' + 
       'Ability-Q: ' + AbilityQ.value + ' \r\n ' + 
       'Ability-W: ' + AbilityW.value + ' \r\n ' +
       'Ability-E: ' + AbilityE.value + ' \r\n ' +
@@ -87,7 +89,7 @@ const name = document.getElementById('module-name');
       var blob = new Blob([data], { type: 'text/plain' });
       var a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
-      a.setAttribute("download", $('#module-name').val() + '.txt');
+      a.setAttribute("download", $('#module-name').val() + 'module.txt');
       a.click(); 
 }
 
