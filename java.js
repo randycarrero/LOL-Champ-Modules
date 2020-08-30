@@ -73,7 +73,7 @@ const name = document.getElementById('module-name');
   const AbilityW = document.getElementById('W');
   const AbilityE = document.getElementById('E');
   const AbilityR = document.getElementById('R');
-  const msg = document.getElementById('msg');
+
   
   // This variable stores all the data.
   let data = 
@@ -82,24 +82,12 @@ const name = document.getElementById('module-name');
       'Ability-Q: ' + AbilityQ.value + ' \r\n ' + 
       'Ability-W: ' + AbilityW.value + ' \r\n ' +
       'Ability-E: ' + AbilityE.value + ' \r\n ' +
-      'Ability-R: ' + AbilityR.value + ' \r\n ' +
-      'Message: ' + msg.value;
+      'Ability-R: ' + AbilityR.value;
   
-  // Convert the text to BLOB.
-  const textToBLOB = new Blob([data], { type: 'text/plain' });
-  const sFileName = 'formData.txt';	   // The file to save the data.
-
-  let newLink = document.createElement("a");
-  newLink.download = sFileName;
-
-  if (window.webkitURL != null) {
-      newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-  }
-  else {
-      newLink.href = window.URL.createObjectURL(textToBLOB);
-      newLink.style.display = "none";
-      document.body.appendChild(newLink);
-  }
-
-  newLink.click(); 
+      var blob = new Blob([data], { type: 'text/plain' });
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.setAttribute("download", $('#module-name').val() + '.txt');
+      a.click(); 
 }
+
