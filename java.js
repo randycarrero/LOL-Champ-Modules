@@ -43,7 +43,7 @@ function toggle_visibility(id) {
 }
 
 window.onload = ()=>{
-  document.getElementById("myRange").addEventListener("input", report);
+  document.getElementById("Q-range").addEventListener("input", report);
   document.getElementById("W-range").addEventListener("input", report);
   document.getElementById("E-range").addEventListener("input", report);
   document.getElementById("R-range").addEventListener("input", report);  
@@ -74,7 +74,10 @@ const modulename = document.getElementById('modulename');
   const AbilityW = document.getElementById('W');
   const AbilityE = document.getElementById('E');
   const AbilityR = document.getElementById('R');
-
+ const Qrange = document.getElementById('Q-range');
+ const Wrange = document.getElementById('W-range');
+ const Erange = document.getElementById('E-range');
+ const Rrange = document.getElementById('R-range');
   
   // This variable stores all the data.
   let data = 
@@ -84,7 +87,11 @@ const modulename = document.getElementById('modulename');
       'Ability-Q: ' + AbilityQ.value + ' \r\n ' + 
       'Ability-W: ' + AbilityW.value + ' \r\n ' +
       'Ability-E: ' + AbilityE.value + ' \r\n ' +
-      'Ability-R: ' + AbilityR.value;
+      'Ability-R: ' + AbilityR.value + ' \r\n ' +
+      'Q Range: ' + Qrange.value + ' \r\n ' +
+      'W Range: ' + Wrange.value + ' \r\n ' +
+      'E Range: ' + Erange.value + ' \r\n ' +
+      'R Range: ' + Rrange.value ;
   
       var blob = new Blob([data], { type: 'text/plain' });
       var a = document.createElement("a");
