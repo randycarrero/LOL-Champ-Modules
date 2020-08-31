@@ -48,9 +48,9 @@
 <p></p>
 <div class="row">
     <div class="column">  
-      <h2><span class="tooltip" title="When filling the name only write the name of the champ to make process easier when adding the files to program.">File Name</span></h2> 
+      <h2><span class="tooltip" title="Write the champion name for the module that your working on. download will not work if this is not filled out.">File Name</span><span Class="star"> *</span></h2> 
      <form> 
-        <input class="textbox" id="module-name" placeholder="JaxModule" type="text"required>
+        <input class="textbox" id="modulename" placeholder="Jax" type="text" onkeyup="EnableDisable(this)">
   </form>
   </div>
     <div class="column">
@@ -150,14 +150,15 @@
         <hr class="separator-left">
         <hr class="separator-right">
         <br>
-        <button class="buttons" id="download-file" type="submit" onclick="saveFile()"><i class="fa fa-download"></i> Download File</button>
-
+        <form>
+        <button class="buttons" id="downloadfile" type="submit" onclick="saveFile()" disabled="disabled"><i class="fa fa-download"></i> Download File</button>
+</form>
     </body>
     <br>
     <br>
     <div class="column">
       <fieldset>
-            <h4 class="footer">Author: R. C. // Project since 2020</h4>
+            <h4 class="footer" id="footer1">Author: R. C. // Project since 2020</h4>
           </fieldset>
 </div>
 <div class="column">

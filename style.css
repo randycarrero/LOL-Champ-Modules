@@ -342,3 +342,6 @@ a {
 html[xmlns] #nav {
 	display: block;
 }
+.star {
+  color:#66d9ef;
+} 

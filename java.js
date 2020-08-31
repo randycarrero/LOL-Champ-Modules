@@ -67,8 +67,8 @@ window.onload = ()=>{
 let saveFile = () => {
     	
   // Get the data from each element on the form.
-const name = document.getElementById('module-name');
-const modulename = document.getElementById('module-name');
+const name = document.getElementById('modulename');
+const modulename = document.getElementById('modulename');
   const Champ = document.getElementById('ajax');
   const AbilityQ = document.getElementById('Q');
   const AbilityW = document.getElementById('W');
@@ -89,7 +89,20 @@ const modulename = document.getElementById('module-name');
       var blob = new Blob([data], { type: 'text/plain' });
       var a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
-      a.setAttribute("download", $('#module-name').val() + 'module.txt');
+      a.setAttribute("download", $('#modulename').val() + 'module.txt');
       a.click(); 
 }
 
+function EnableDisable(modulename) {
+  //Reference the Button.
+  var btnSubmit = document.getElementById("downloadfile");
+
+  //Verify the TextBox value.
+  if (modulename.value.trim() != "") {
+      //Enable the TextBox when TextBox has value.
+      downloadfile.disabled = false;
+  } else {
+      //Disable the TextBox when TextBox is empty.
+      downloadfile.disabled = true;
+  }
+};
