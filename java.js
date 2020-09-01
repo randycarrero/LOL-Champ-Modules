@@ -88,10 +88,10 @@ const modulename = document.getElementById('modulename');
       'Ability-W: ' + AbilityW.value + ' \r\n ' +
       'Ability-E: ' + AbilityE.value + ' \r\n ' +
       'Ability-R: ' + AbilityR.value + ' \r\n ' +
-      'Q Range: ' + Qrange.value + ' \r\n ' +
-      'W Range: ' + Wrange.value + ' \r\n ' +
-      'E Range: ' + Erange.value + ' \r\n ' +
-      'R Range: ' + Rrange.value ;
+      'Q Timescale: ' + Qrange.value + ' \r\n ' +
+      'W Timescale: ' + Wrange.value + ' \r\n ' +
+      'E Timescale: ' + Erange.value + ' \r\n ' +
+      'R Timescale: ' + Rrange.value ;
   
       var blob = new Blob([data], { type: 'text/plain' });
       var a = document.createElement("a");

@@ -41,14 +41,25 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p id="demo-modal"></p>
+    <p id="">
+      <b>What is the purpose for Modules</b>
+      <p>The purpose for modules is that you can start creating specific functions for each champion and have their animations attached.
+       <br>In this site you will have the option to download the boilerplate code. It will always be updated to the current stable version.
+       <br>
+       <br> Make the ability quick cast or point and clicks scenario's
+       <br> Every <span class="star"><i class="fas fa-asterisk"></i></span> Needs to be filled out for the <i class="fa fa-download"></i> download button to work;
+<br>If you have any issues with the site or something is not working properly please click the <i class="fas fa-code-branch"></i> issue button; it will direct you to the issue github page.
+
+
+
+    </p>
   </div>
 </div> 
 
 <p></p>
 <div class="row">
     <div class="column">  
-      <h2><span class="tooltip" title="Write the champion name for the module that your working on. download will not work if this is not filled out.">File Name</span><span Class="star"> *</span></h2> 
+      <h2><span class="tooltip" title="Write the champion name for the module that your working on. download will not work if this is not filled out.">File Name</span><span Class="star"> <i class="fas fa-asterisk" data-fa-transform="up-6"></i></span></h2> 
      <form> 
         <input class="textbox" id="modulename" placeholder="Jax" type="text" onkeyup="EnableDisable(this)">
   </form>
@@ -59,7 +70,7 @@
     </div>
   </div>
   <br>
-  <div class="separator-style"></div>
+  <div class="separator-style2"></div>
   <hr class="separator-left">
   <hr class="separator-right"> 
   <div class="row2">
@@ -139,21 +150,24 @@
  <hr class="separator-left">
  <hr class="separator-right">
  <br>
-
+ <form>
+  <button class="buttons" id="downloadfile" type="submit" onclick="saveFile()" disabled="disabled"><i class="fa fa-download"></i> Download File</button>
+</form>
+<div class="separator-style"></div>
+<hr class="separator-left">
+<hr class="separator-right">
+<br>
         <div class="Syntax">
-            <h2 class="tittle" style="text-align: center;"><span class="tooltip" title="This is a Template view only">Syntax Highlighting</span></h2>
+            <h2 class="tittle" style="text-align: center;"><span class="tooltip" title="This is the full boilerplate code for Twisted Fate.">Full boilerplate code</span></h2>
             <div class="syntax-highlight" id="strip-container"></div>
         </div>
-        <pre data-src="Template\TemplateModule.cs" data-download-link data-download-link-label="Download this file"><code class="language-csharp" data-download-link>
+        <pre data-src="https://raw.githubusercontent.com/nicolasdeory/leagueoflegends-led/dev/LeagueOfLegends/ChampionModules/TwistedFateModule.cs" data-download-link data-download-link-label="Download this file"><code class="language-csharp" data-download-link>
         </code></pre>
         <br><br>
         <div class="separator-style2"></div>
         <hr class="separator-left">
         <hr class="separator-right">
         <br>
-        <form>
-        <button class="buttons" id="downloadfile" type="submit" onclick="saveFile()" disabled="disabled"><i class="fa fa-download"></i> Download File</button>
-</form>
     </body>
     <br>
     <br>
@@ -165,7 +179,7 @@
 <div class="column">
 <fieldset>
   <h4 class="footer">Credit to: </h4>
-  <h3 class="footer"><i class="fas fa-id-badge"></i> Icon's © <a class="footer" href="https://fontawesome.com/license/free">FA</a></h3> 
+  <h3 class="footer"><i class="fab fa-font-awesome"></i> Icon's © <a class="footer" href="https://fontawesome.com/license/free">FA</a></h3> 
 </fieldset>  
 </div>
   <script>

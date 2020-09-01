@@ -343,5 +343,6 @@ html[xmlns] #nav {
 	display: block;
 }
 .star {
-  color:#66d9ef;
+  color:#ff9800;
+  font-size: 12px;
 } 
