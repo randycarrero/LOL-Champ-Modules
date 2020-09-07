@@ -346,3 +346,14 @@ html[xmlns] #nav {
   color:#ff9800;
   font-size: 12px;
 } 
+img.riot-lol {
+  height: 40px;
+}
+fieldset.field {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-color: #a6e22e;
+}
