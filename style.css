@@ -244,26 +244,16 @@ input {
 div.separator-style {
   height: 10%;
   background: url(res/separator/1.5.png) no-repeat scroll center;
+  margin-top: -35px;
   }
 
 div.separator-style2 {
     height: 10%;
     background: url(res/separator/2.1.png) no-repeat scroll center;
+    margin-top: -38px;
     }
-hr.separator-left
+  hr.separator
   {
-  width: 40%;
-  margin-top: -50px;
-  margin-left: 0px;
-  border: 0;
-  border-bottom: 2px dashed black;
-  }
-
-  hr.separator-right
-  {
-  width: 40%;
-  margin-top: -10px;
-  margin-Right: 0px;
   border: 0;
   border-bottom: 2px dashed black;
   }
@@ -350,10 +340,31 @@ img.riot-lol {
   height: 40px;
 }
 fieldset.field {
+  border: solid;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-color: #a6e22e;
+  padding-bottom: 10px;
+}
+
+legend.legend{
+  width: 213px;
+  margin-top: -30px;
+  margin-left: 38%;
+  padding: 0 0.2em;
+  background-image: url(res/separator/1.5.png);
+  position: absolute;
+  height: 9%;
+}
+legend.legend2{
+  width: 183px;
+  margin-top: -30px;
+  margin-left: 40%;
+  padding: 0 0.2em;
+  background-image: url(res/separator/2.1.png);
+  position: absolute;
+  height: 9%;
 }
