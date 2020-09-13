@@ -9,7 +9,8 @@ namespace Games.LeagueOfLegends.ChampionModules
     [Champion(CHAMPION_NAME)]
     public sealed class XerathModule : ChampionModule
     {
-        public const string CHAMPION_NAME = "Xerath";
+        public const string CHAMPION_NAME = 
+        - "Xerath";
         // Variables
 
         // Champion-specific Variables
@@ -27,10 +28,10 @@ namespace Games.LeagueOfLegends.ChampionModules
             // Initialization for the champion module occurs here.
         }
 
-        protected override AbilityCastMode GetQCastMode() => AbilityCastMode.Instant(3500, 1, AbilityCastMode.KeyUpRecast());
+        protected override AbilityCastMode GetQCastMode() => AbilityCastMode.Normal();
         protected override AbilityCastMode GetWCastMode() => AbilityCastMode.Normal();
         protected override AbilityCastMode GetECastMode() => AbilityCastMode.Normal();
-        protected override AbilityCastMode GetRCastMode() => AbilityCastMode.Instant(10000, 3, AbilityCastMode.Instant());
+        protected override AbilityCastMode GetRCastMode() => AbilityCastMode.Normal();
 
         protected override void OnMouseClick(object s, MouseEventArgs e)
         {

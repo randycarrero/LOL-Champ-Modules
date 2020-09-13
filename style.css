@@ -39,7 +39,7 @@
 padding: 3px;
 }
 .tittle {
-  color: #f8f8f2;
+  color: #34A7C1;
 }
 
 /* The Modal (Code) */
@@ -140,7 +140,7 @@ float: right;
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted;
-  color: #f8f8f2;
+  color: #34A7C1;
 }
 #column {
   box-sizing: border-box;
@@ -336,9 +336,7 @@ html[xmlns] #nav {
   color:#ff9800;
   font-size: 12px;
 } 
-img.riot-lol {
-  height: 40px;
-}
+
 fieldset.field {
   border: solid;
   border-radius: 5px;
