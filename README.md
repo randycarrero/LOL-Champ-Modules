@@ -1,4 +1,6 @@
-# !note that this is still in sample view. nothing will change from the enviorment. this will have more features but for right now its still under development and will not be live for some time. 
+# The website will give you the ability to create a basic text file with info for you to copy and paste. on the file you are creating. 
+there is a boiler plate code for you to download the boiler plate code will be updated evertime it needs to be containing the new information. 
+
 
 # LOL-Champ-Modules
 Easy web interface to create Champion Modules for the lol LED program 
